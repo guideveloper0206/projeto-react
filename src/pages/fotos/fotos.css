@@ -1,0 +1,33 @@
+#pictures {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+}
+
+.imagens {
+    width: 230px;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    margin: 20px;
+    margin-left: 120px;
+}
+
+.imagens:hover {
+    scale: 1.03;
+}
+
+    @media (max-width: 768px) {
+        #pictures {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .imagens {
+            margin-left: 190px;
+            width: 50%;
+            height: 400px;
+        }
+    }
